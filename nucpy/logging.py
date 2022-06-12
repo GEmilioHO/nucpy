@@ -118,6 +118,9 @@ get_memory_usage = anndata.logging.get_memory_usage
 
 
 _DEPENDENCIES_NUMERICS = [
+    'czifile',
+    ('skimage', 'scikit-image'),
+    'cellpose',
     'anndata',  # anndata actually shouldn't, but as long as it's in development
     'umap',
     'numpy',
