@@ -1,46 +1,46 @@
-# NuclearPy
+# NucPy
 
-## Overview of NuclearPy
+## Overview of NucPy
 
-NuclearPy is a suite of bioinformatics tools for 
+NucPy is a suite of bioinformatics tools for 
 the quantification and analysis of nuclear features from
 high-content imaging data. 
 
-## How to download NuclearPy
+## How to download NucPy
 
 ```bash
 # Using git
-git clone https://github.com/f-hamidlab/nuclearpy.git
+git clone https://github.com/f-hamidlab/nucpy.git
 # or if you have SSH setup
-# git clone git@github.com:f-hamidlab/nuclearpy.git
+# git clone git@github.com:f-hamidlab/nucpy.git
 ```
 
-## How to install NuclearPy
+## How to install NucPy
 ```bash
-cd nuclearpy
+cd nucpy
 pip install .
 ```
 
-## How to run NuclearPy
+## How to run NucPy
 
 ### Using interactive Jupyter Notebooks
 
-The easiest way to execute NuclearPy is by using 
+The easiest way to execute NucPy is by using 
 our interactive Jupyter Notebooks for 
 nuclei segmentation and downstream analyses. To
-use NuclearPy this way, be sure to load Jupyter on
+use NucPy this way, be sure to load Jupyter on
 your local computer and open the Notebook you wish
 to run. 
 
 ### Using command-line terminal
 
-Alternatively, users may run NuclearPy in Terminal. 
+Alternatively, users may run NucPy in Terminal. 
 Below, we provide a quickstart guide to performing 
 nuclei segmentation on our sample image data:
 
 ```python
 ## load modules
-import nuclearpy.segmentation as ncp
+import nucpy.segmentation as ncp
 import matplotlib.pyplot as plt
 
 ## create Segmentador object
@@ -65,5 +65,5 @@ nps.spatial_entropy(d = 5, zoom_box_size = 200)
 ## output data
 nps.saveArrays()
 nps.saveChannelInfo()
-nps.export_csv(filename = "nuclearpy_output.csv")
+nps.export_csv(filename = "nucpy_output.csv")
 ```
